@@ -123,13 +123,13 @@
             }
             
             .container #My_Books table tbody {
-                width: 21rem;
+                width: 18rem;
                 height: fit-content;
                 overflow-x: hidden;
             }
             
             .container #My_Books table thead {
-                width: 21rem;
+                width: 18rem;
                 margin: 0rem;
                 padding: 0rem;
             }
@@ -190,7 +190,7 @@
             }
             
             .container #My_Books table tbody {
-                width: 16rem;
+                width: 14rem;
                 font-size: small;
                 height: fit-content;
                 overflow-x: hidden;
@@ -198,7 +198,7 @@
             
             .container #My_Books table thead {
                 font-size: small;
-                width: 16rem;
+                width: 14rem;
                 margin: 0rem;
                 padding: 0rem;
             }
