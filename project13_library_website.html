@@ -154,7 +154,7 @@
             .container #My_Books table td ,.container #My_Books table td .remove{
                 text-align: left;
                 font-size: .6rem;
-                padding: 0rem .5rem;
+                padding: 0rem;
             }
             
             #issue_book_name {
