@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library_website</title>
+    <link rel="stylesheet" href="project13_library_website.css">
+    <style>
+        @media screen and (max-width : 855px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #navbar div h4 {
+                font-size: 1rem;
+                margin: 0rem;
+                padding: .5rem;
+                font-weight: 900;
+            }
+            #navbar div input,
+            #navbar div button,
+            #navbar div a {
+                font-size: .8rem;
+                margin: 0rem;
+                padding: 0.5rem;
+
+            }
+            #navbar div input,
+            #navbar div button {
+                width: 5rem;
+                margin: .5rem;
+                padding: 0rem;
+            }
+            .container {
+                width: 45rem;
+            }
+            
+            div textarea {
+                width: 20rem;
+            }
+            
+            hr {
+                height: .1rem;
+                width: 15rem;
+                background-color: burlywood;
+            }
+            
+            .container #My_Books table tbody{
+                width: 26rem;
+                height: fit-content;
+                overflow-x: hidden;
+            }
+            
+            .container #My_Books table thead {
+                width: 26rem;
+                margin: 0rem;
+                padding: 0rem;
+            }
+            
+            .container #library_form .inputs {
+                margin: 0rem;
+            }
+            
+            .container #library_form .inputs input,
+            #issue_form .inputs input {
+                width: 15rem;
+                padding: 0rem 1rem;
+                margin-left: 1rem;
+            }
+            
+            .container #My_Books table th {
+                padding: 0rem;
+                text-align: left;
+                font-size: .8rem;
+            }
+            
+            .container #My_Books table td {
+                text-align: left;
+                padding: 0.5rem;
+            }
+            
+            #issue_book_name {
+                margin-left: 1.8rem;
+                width: 17.4rem;
+                padding: 0rem 1rem;
+                
+            }
+            
+            .container #library_form .inputs input[name="Name"] {
+                margin-left: 1.45rem;
+            }
+        }
+        @media screen and (max-width : 771px) {
+            .container {
+                width: 40rem;
+            }
+
+        }
+        @media screen and (max-width : 700px){
+            .container {
+                width: 35rem;
+            }
+        }
+        @media screen and (max-width : 610px){
+            .container {
+                width: 30rem;
+            }
+        }
+        @media screen and (max-width : 540px){
+            .container {
+                width: 25rem;
+            }
+            div textarea {
+                width: 20rem;
+            }
+            
+            hr {
+                height: .1rem;
+                width: 15rem;
+                background-color: burlywood;
+            }
+            
+            .container #My_Books table tbody {
+                width: 21rem;
+                height: fit-content;
+                overflow-x: hidden;
+            }
+            
+            .container #My_Books table thead {
+                width: 21rem;
+                margin: 0rem;
+                padding: 0rem;
+            }
+            
+            .container #library_form .inputs {
+                margin: 0rem;
+            }
+            
+            .container #library_form .inputs input,
+            #issue_form .inputs input {
+                width: 10rem;
+                padding: 0rem 1rem;
+                margin-left: 1rem;
+            }
+            
+            .container #My_Books table th {
+                padding: 0rem;
+                text-align: left;
+                font-size: .6rem;
+            }
+            
+            .container #My_Books table td {
+                text-align: left;
+                /* padding: 0.5rem; */
+            }
+            
+            #issue_book_name {
+                margin-left: 1.8rem;
+                width: 12.4rem;
+                padding: 0rem 1rem;
+                
+            }
+            #navbar div h4 {
+                font-size:small ;
+            }
+            .container div h1 {
+                font-size:medium ;
+            }
+        }
+        @media screen and (max-width : 450px){
+            .container {
+                width: 20rem;
+            }
+        }
+        @media screen and (max-width : 386px){
+            .container {
+                font-size: small;
+                width: 15rem;
+            }
+            div textarea {
+                width: 15rem;
+            }
+            
+            hr {
+                height: .1rem;
+                width: 15rem;
+                background-color: burlywood;
+            }
+            
+            .container #My_Books table tbody {
+                width: 16rem;
+                font-size: small;
+                height: fit-content;
+                overflow-x: hidden;
+            }
+            
+            .container #My_Books table thead {
+                font-size: small;
+                width: 16rem;
+                margin: 0rem;
+                padding: 0rem;
+            }
+            
+            .container #library_form .inputs {
+                font-size: small;
+                margin: .3rem 0rem;
+            }
+            
+            .container #library_form .inputs input,
+            #issue_form .inputs input {
+                font-size: small;
+                width: 7rem;
+                padding: 0rem 1rem;
+                margin-left: 1rem;
+            }
+            
+            .container #My_Books table th {
+                padding: 0rem;
+                text-align: left;
+                font-size: .6rem;
+                
+            }
+            
+            .container #My_Books table td {
+                text-align: left;
+                /* padding: 0.5rem; */
+                font-size: small;
+            }
+            
+            #issue_book_name {
+                font-size: small;
+                margin-top: 0;
+                margin-left: 1.7rem;
+                width: 9.4rem;
+                padding: 0rem 1rem;
+                
+            }
+        }
+        @media screen and (max-width : 312px){
+            .container {
+                width: 15rem;
+            }
+            /* span{
+                font-size: xX-small;
+            } */
+            hr {
+                height: .1rem;
+                width: 10rem;
+                background-color: burlywood;
+            }
+            #navbar div h4 {
+                font-size: .7rem;
+            }
+            #navbar div input,
+            #navbar div button,
+            #navbar div a {
+                font-size: .6rem;
+            }
+            #navbar div input,
+            #navbar div button {
+                width: 4rem;
+            }
+            .container #My_Books table tbody {
+                width: 14.5rem;
+                font-size: small;
+                height: fit-content;
+                overflow-x: hidden;
+            }
+            
+            .container #My_Books table thead {
+                font-size: small;
+                width: 14.5rem;
+                margin: 0rem;
+                padding: 0rem;
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <div class="heading">
+                <h4>College Library</h4>
+                <a href="#" class="home">HOME</a>
+            </div>
+            <div>
+                <input type="search" name="search" id="search_box" placeholder="&#128269">
+                <button class="btn" id="search">SEARCH</button>
+            </div>
+        </nav>
+    </header>
+    <div id="alert">
+    </div>
+    <div class="container">
+        <div>
+            <hr>
+            <h1>College Library</h1>
+            <hr>
+        </div>
+        <div id="add_book">
+            Fill below Form to Add book to library:-
+        </div>
+        <form id="library_form">
+            <div class="inputs">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" id="BookName" placeholder="Enter Book Name here">
+            </div>
+            <div class="inputs">
+                <label for="Author">Author</label>
+                <input type="text" name="Author" id="AuthorName" placeholder="Enter Author Name here">
+            </div>
+            <div class="inputs" id="radio">
+                <label for="type">Type</label>
+                <div class="radio">
+                    <div>
+                        <input type="radio" name="type" id="fiction" checked
+                            value="fiction"><span>fiction</span></input>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="computer_programming"
+                            value="computer programming"><span>programming</span></input>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="cooking" value="cooking"><span>cooking</span></input>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Add Book" class="btn">
+            </div>
+        </form>
+        <div id="issue_book">
+            Fill below Form to issue book from library:-
+        </div>
+        <form id="issue_form">
+
+            <div class="inputs">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" id="studentName" placeholder="Enter Your Name here">
+            </div>
+            <div class="inputs">
+                <label for="Book">Book</label>
+                <select name="Book" id="issue_book_name">
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Issue Book" class="btn">
+            </div>
+        </form>
+        <div id="My_Books">
+            <hr>
+            <details>
+                <summary>Your Books </summary>
+                <hr>
+                <table>
+                    <thead id="tableHead" class="tableHead">
+                        <tr>
+                            <th>S.NO.</th>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Type</th>
+                            <th>click below button to remove book</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody" class="tableBody">
+                    </tbody>
+                </table>
+            </details>
+            <details>
+                <summary>History of Issueing Books</summary>
+                <table>
+                    <thead id="historyTableHead" class="historyTableHead">
+                        <tr>
+                            <th>S.NO.</th>
+                            <th>Student Name</th>
+                            <th>Book</th>
+                            <th>Issued date & time</th>
+                            <th>click below button to remove book</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody" class="historyTableBody">
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="project13_library_website.js"></script>
+</body>
+
+</html>
