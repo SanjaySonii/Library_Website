@@ -154,7 +154,7 @@
             .container #My_Books table td {
                 text-align: left;
 /*                 padding: 0.5rem; */
-                font-size: small;
+                font-size: .6rem;
             }
             
             #issue_book_name {
