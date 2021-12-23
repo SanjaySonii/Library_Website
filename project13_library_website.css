@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    background-color: rgb(168, 154, 154);
+}
+
+/* alert */
+#alert{
+    background-color: rgb(179, 179, 250);
+    padding: 0rem 2.8rem;
+    /* display: none; */
+}
+
+/* navbar */
+
+
+#navbar{
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+}
+#navbar div{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 10rem; */
+}
+#navbar div h4 , #navbar div input ,#navbar div button , #navbar div a{
+    padding: 0rem 1.5rem;
+    margin: 0rem 1rem;
+}
+#navbar div h4{
+    font-weight: bolder;
+}
+#navbar div h4 ,#navbar div a{
+    color: #21f191;
+}
+#navbar div input{
+    height: 1.4rem;
+    width: 10rem;
+    margin-right: 1rem;
+}
+#navbar div a{
+    text-decoration: none;
+}
+#navbar div a:hover{
+    background-color: yellow;
+    border-radius: 4rem;
+    /* border: 2px solid red; */
+    width: fit-content;
+    padding: 0rem 1rem;
+}
+.btn:hover{
+    background-color: rgb(123, 240, 176);
+}
+
+/* container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: 2rem auto;
+    border: 2px solid lightblue;
+    padding: .5rem 1rem;
+}
+.container hr{
+    margin: .5rem 0rem;
+}
+.container .btn{
+    padding: 0rem 1.5rem;
+    /* margin: 0rem 1rem; */
+}
+ #issue_book{ 
+    margin-top:2rem ;
+}
+.container #library_form , #issue_form{
+    display: flex;
+    flex-direction: column;
+}
+.container #library_form .inputs , #issue_form .inputs,#issue_book_name{
+    margin: .1rem 0rem;
+}
+#issue_book_name{    margin-left: 1.8rem;
+    width: 27.4rem;
+    padding: 0rem 1rem;
+    
+}
+.container #library_form .inputs input,#issue_form .inputs input{
+    width: 25rem;
+    padding: 0rem 1rem;
+    margin-left:  1rem;
+}
+.container #library_form .inputs input[name="Name"] , #issue_form .inputs input[name="Name"]{
+    margin-left:  1.45rem;
+}
+.container #library_form .inputs input[type = "radio"]{
+    width: 3rem;
+}
+.container #library_form #radio{
+    display: flex;
+}
+.container #library_form #radio .radio{
+    display: flex;
+    flex-direction: column;
+}
+.container #My_Books{
+    margin-top: 1.5rem;
+}
+
+.container #My_Books table thead{
+    display: block;
+}
+.container #My_Books table tbody{
+    display: block;
+}
+.container #My_Books table tr{
+    display: block;
+    
+    /* border: 2px solid red; */
+    border: 2px solid rgb(67, 189, 189);
+    /* margin-top: .5rem; */
+}
+.container #My_Books table th{
+    /* border: 2px solid blue; */
+    text-align: justify;
+    width: 10rem;
+    padding-right: 3rem;
+    padding-left: .5rem;
+}
+.container #My_Books table td{
+    /* display: flex;
+    flex-direction: row; */
+    /* border: 2px solid rgb(67, 189, 189); */
+    width: 10rem;
+    height: fit-content;
+    text-align: justify;
+    margin: 0rem .5rem;
+    /* padding-right: 3rem; */
+    /* padding-left: .5rem; */
+    /* border: 2px solid grey; */
+}
+.container #My_Books table td .remove{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#tableBody , #historyTableBody{   
+     width: 50rem;
+    height: fit-content;
+    overflow-x: hidden;
+}
